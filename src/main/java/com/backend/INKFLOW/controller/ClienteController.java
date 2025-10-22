@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/clientes")
+@RequestMapping("/clientes")
 @CrossOrigin(origins = {"https://inkflowfrontend.vercel.app", "http://localhost:5173"})
 public class ClienteController {
     
