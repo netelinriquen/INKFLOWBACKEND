@@ -14,7 +14,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://inkflowfrontend.vercel.app", "http://localhost:5173")
+                .allowedOriginPatterns("https://inkflowfrontend.vercel.app", "http://localhost:*", "https://*.app.github.dev")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
