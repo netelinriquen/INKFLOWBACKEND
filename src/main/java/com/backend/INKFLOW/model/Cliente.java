@@ -26,7 +26,7 @@ public class Cliente {
     @Column(name = "created_at")
     private LocalDateTime createdAt = LocalDateTime.now();
     
-    // Constructors
+    
     public Cliente() {}
     
     public Cliente(String username, String email, String password) {
@@ -35,7 +35,7 @@ public class Cliente {
         this.password = password;
     }
     
-    // Getters and Setters
+    
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     
